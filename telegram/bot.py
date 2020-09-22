@@ -133,10 +133,10 @@ class Bot(TelegramObject):
         self.defaults = defaults
 
         if base_url is None:
-            base_url = 'https://api.telegram.org/bot'
+            base_url = 'https://tapi.bale.ai/bot'
 
         if base_file_url is None:
-            base_file_url = 'https://api.telegram.org/file/bot'
+            base_file_url = 'https://tapi.bale.ai/file/bot'
 
         self.base_url = str(base_url) + str(self.token)
         self.base_file_url = str(base_file_url) + str(self.token)
